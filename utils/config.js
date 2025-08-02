@@ -13,8 +13,6 @@ const {
   PORT = 3001,
 } = process.env;
 
-console.log("JWT_SECRET:", JWT_SECRET);
-
 module.exports = {
   JWT_SECRET,
   DB_URL,
