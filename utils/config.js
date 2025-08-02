@@ -1,3 +1,4 @@
+require("dotenv").config();
 const crypto = require("crypto");
 
 const randomString = crypto
@@ -11,6 +12,8 @@ const {
   DB_URL = "mongodb://127.0.0.1:27017/wtwr_db",
   PORT = 3001,
 } = process.env;
+
+console.log("JWT_SECRET:", JWT_SECRET);
 
 module.exports = {
   JWT_SECRET,
