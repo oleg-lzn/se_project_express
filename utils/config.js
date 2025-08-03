@@ -5,8 +5,6 @@ const randomString = crypto
   .randomBytes(32) // generating a random sequence of 16 bytes (128 bits)
   .toString("hex"); // converting it into a string
 
-console.log(randomString);
-
 const {
   JWT_SECRET = "CAT_FISH",
   DB_URL = "mongodb://127.0.0.1:27017/wtwr_db",

@@ -2,6 +2,12 @@
 
 This project is the back-end of the **WTWR (What to Wear?)** web application — a platform for users to share and explore clothing items based on the weather. The back-end is built with **Node.js**, **Express.js**, and **MongoDB**, and follows REST API principles. It handles user and item data, provides authorization stubs, and is structured for future scalability and deployment.
 
+# 🧥 Domain names
+
+www.wtwr.euronatura.pt
+wtwr.euronatura.pt
+api.wtwr.euronatura.pt
+
 ---
 
 ## 🛠️ Technologies Used
