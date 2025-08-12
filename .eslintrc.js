@@ -2,6 +2,7 @@ module.exports = {
   env: {
     es2021: true,
     node: true,
+    jest: true,
   },
   extends: ["eslint:recommended", "airbnb-base", "prettier"],
   overrides: [
@@ -22,5 +23,6 @@ module.exports = {
   rules: {
     "no-console": ["warn", { allow: ["error"] }],
     "no-underscore-dangle": ["error", { allow: ["_id"] }],
+    "no-unused-vars": "off",
   },
 };
