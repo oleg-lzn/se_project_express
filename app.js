@@ -33,6 +33,10 @@ app.get("/crash-test", () => {
   }, 0);
 });
 
+app.get("/", (req, res) => {
+  res.send("Server is running 🚀");
+});
+
 app.use("/", mainRouter);
 
 // the error logger
