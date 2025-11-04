@@ -20,7 +20,21 @@ mongoose
     console.error(err);
   });
 
-app.use(cors());
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://se-project-react-two.vercel.app",
+  "https://se-project-react-git-main-olegs-projects-829acb4f.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // the request logger
