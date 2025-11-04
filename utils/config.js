@@ -7,7 +7,8 @@ const randomString = crypto
 
 const {
   JWT_SECRET = "CAT_FISH",
-  DB_URL = "mongodb://127.0.0.1:27017/wtwr_db",
+  // DB_URL = "mongodb://127.0.0.1:27017/wtwr_db",
+  DB_URL = "mongodb+srv://luzeninoleg2012_db_user:uspPJPrQkbFkXvnu@wtwr.nsoayrq.mongodb.net/?appName=WTWR",
   PORT = 3001,
 } = process.env;
 
