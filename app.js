@@ -4,11 +4,12 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const { errors } = require("celebrate");
 const mainRouter = require("./routes/index");
-const { DB_URL, PORT } = require("./utils/config");
+const { DB_URL } = require("./utils/config");
 const errorHandler = require("./middlewares/error-handler");
 const { requestLogger, errorLogger } = require("./middlewares/logger");
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 mongoose
   .connect(DB_URL)
